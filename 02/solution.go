@@ -28,7 +28,7 @@ func part1() {
 		command := line[0]
 		value, _ := strconv.Atoi(line[1])
 
-		fmt.Println(command, value)
+		// fmt.Println(command, value)
 
 		switch command {
 		case "forward":
@@ -40,7 +40,7 @@ func part1() {
 		}
 	}
 
-	fmt.Println(vertical * horizontal)
+	fmt.Println("Part 1:", vertical*horizontal)
 }
 
 func part2() {
@@ -62,7 +62,7 @@ func part2() {
 		command := line[0]
 		value, _ := strconv.Atoi(line[1])
 
-		fmt.Println(command, value)
+		// fmt.Println(command, value)
 
 		switch command {
 		case "forward":
@@ -75,10 +75,12 @@ func part2() {
 		}
 	}
 
-	fmt.Println(depth * horizontal)
+	fmt.Println("Part 2:", depth*horizontal)
 }
 
 func main() {
+
+	part1()
 
 	part2()
 }
